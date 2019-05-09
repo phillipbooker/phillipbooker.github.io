@@ -1,53 +1,125 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
     <head>
-        <title>Phillip Booker - Portfolio</title>
+        <!-- Required for responsive viewports -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!--  Fonts  -->
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
+
+        <!-- External bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+        
+        <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Phillip Booker - Portfolio</title>
     </head>
     <body>
-        <header>
-            <div class="header-box">
-                <h1>Phillip Booker</h1>
-                <nav>
-                    <ul>
-                        <li><a class="bg-switch" href="index.html">About</a></li>
-                        <li>|</li>
-                        <li><a class="bg-switch" href="portfolio.html">Portfolio</a></li>
-                        <li>|</li>
-                        <li><a class="bg-switch" href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><h1>Phillip Booker</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </header>
-        <main>
-            <h1 class="main-heading">Portfolio</h1>
-            <div>
-                <div class="proj-row">
-                    <div id="proj1" class="project">
-                        <a href="#">Hangman</a>
-                    </div>
-                    <div id="proj2" class="project">
-                        <a href="#">RPG Game</a>
+        </nav>
+        <main id="portfolio" class="container-fluid">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="header-main">Portfolio</h1>
                     </div>
                 </div>
-                <div class="proj-row">
-                    <div id="proj3" class="project">
-                        <a href="#">Trivia Game</a>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="proj-box card shadow-sm">
+                            <img class="card-img-top proj-pic" src="assets/images/hangman.jpg" alt="Project Picture">
+                            <div class="card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/Word-Guess-Game/"><h5>Hangman</h5></a>
+                                <p class="card-text">A basketball themed game of Hangman!</p>
+                            </div>
+                        </div>
                     </div>
-                    <div id="proj4" class="project">
-                        <a href="#">Rutgers Info Widget</a>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="proj-box card shadow-sm">
+                            <img class="card-img-top proj-pic" src="assets/images/rpg.JPG" alt="Project Picture">
+                            <div class="card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/unit-4-game/"><h5>RPG Game</h5></a>
+                                <p class="card-text">Choose one of four Star Wars character in this RPG battle game!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="proj-row">
-                    <div id="proj5" class="project">
-                        <a href="#">Rock Paper Scissors</a>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="proj-box card shadow-sm">
+                            <img class="card-img-top proj-pic" src="assets/images/trivia.JPG" alt="Project Picture">
+                            <div class="card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/TriviaGame/"><h5>Trivia Game</h5></a>
+                                <p class="card-text">Dragon Ball Z Trivia!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="proj-box card shadow-sm">
+                            <img class="card-img-top proj-pic" src="assets/images/gif-search.JPG" alt="Project Picture">
+                            <div class="card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/GifGrab/"><h5>GIPHY Search</h5></a>
+                                <p class="card-text">Search for GIFs of your favorite cartoons using this GIPHY API powered app!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="proj-box card shadow-sm">
+                            <img class="card-img-top proj-pic" src="assets/images/rps.JPG" alt="Project Picture">
+                            <div class="card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/RPS-Multiplayer/"><h5>Rock Paper Scissors</h5></a>
+                                <p class="card-text">A multiplayer Rock Paper Scissors game powered by Firebase!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="proj-box card shadow-sm">
+                            <img class="card-img-top proj-pic" src="assets/images/hero.JPG" alt="Project Picture">
+                            <div class="card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/group-project-1/"><h5>Marvel Hero Battle</h5></a>
+                                <p class="card-text">A multiplayer Hero Battle game featuring Marvel heroes powered by Firebase!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
-        <footer class='p-footer'>
-            Copyright&copy;
+        
+        <footer class="page-footer">
+            <div class="containter text-center">
+                <p>
+                    Copyright 2019 &copy;
+                </p>
+            </div>
         </footer>
+        
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
-    
 </html>

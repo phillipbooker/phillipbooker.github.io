@@ -1,190 +1,156 @@
-*{
-    box-sizing: border-box;
-}
-
-/*'margin: auto in body and main allow content to be centered*/
-body {
-    color: #777777;
+body{
+    background-image: url("../images/prism.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    /*background-color: #4aaaa5;*/
-    background-image: url("../images/houndstooth-pattern.png");
-    margin: auto;
+    /* height: 100vh; */
 }
 
-main {
-    width: 960px;
-    background-color: #ffffff;
-    border: solid 1px #dddddd;
-    padding: 15px;
-    margin: auto;
-    margin-bottom: 25px;
+
+nav{
+    /* margin-bottom: 15px; */
+    border-bottom: solid 1.5px #1B86C1;
+    background-color: #f3f3f3;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+/* Used for navbar background */
+.bg-light{
+    background-color: #f3f3f3;
 }
 
-header {
-    background-color: #ffffff;
-    border-bottom: solid 1.5px #cccccc;
-    margin-bottom: 15px;
-}
-
-.header-box{
-    width: 960px;
-    margin: auto;
-}
-
-/*float left and float right allow them to sit on the left and right edges of the header*/
-header h1{
-    float: left;
-    background-color: #4aaaa5;
-    color: #ffffff;
-    height: 100%;
-    padding: 20px;
-    margin: 0;
-}
-
-header nav{
-    float: right;
-    margin-top: 15px;
-}
-
-/*clearfix hack for header*/
-header::after{
-    display: block;
-    content: "";
-    clear: both;
-}
-
-/*allows links in list inside the nav to sit next to each other*/
-ul li{
-    display: inline-block;
+header{
     text-align: center;
 }
 
-li a{
-    padding: 10px;
+main{
+    padding: 15px;
+    max-width: 960px;
+    background-color: #e9e9e9;
+    border: solid 1px #dddddd;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    border-radius: 3px;
+}
+
+h1, h2, h3, h4{
+    color: #2055AA;
+    font-family: 'Josefin Slab', serif;
+    /* font-family: 'Georgia', Times, Times New Roman, serif; */
+}
+
+a{
+    color: #2055AA;
+}
+
+a:hover{
+    color: #1AA9B7;
     text-decoration: none;
-    color: #777777;
-    border-radius: 10px;
 }
 
-.bg-switch{
-    transition: background-color 0.25s;
-    transition: color 0.25s;
+.header-main{
+    border-bottom: solid 1px #1B86C1;
+    margin-bottom: 20px;
 }
 
-.bg-switch:hover{
-    background-color: #4aaaa5;
+/* Bio Page */
+
+#profile-pic{
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+
+/* Portfolio Page */
+#portfolio{
+    max-width: 700px;
+}
+
+.proj-box{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* max-width: 250px; */
+}
+
+/* .proj-pic{
+    max-width: 200px;
+} */
+
+.proj-pic.card-img-top{
+    height: 150px;
+    object-fit: cover;
+}
+
+.proj-link{
+    width: 100%;
+    max-width: 200px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: #4aaaab;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.card-body{
+    background-color: rgb(224, 224, 224);
+    border: solid 1px silver;
+}
+
+.proj-box .card-body{
+    height: 140px;
+}
+
+/* .proj-box{
+    border: solid 1px #1B86C1;
+} */
+
+/* Contact Page */
+
+#contact{
+    max-width: 500px;
+}
+
+.btn{
+    background: #1B86C1;
+    border: 0 none;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #ffffff;
 }
 
-.main-heading{
-    border-bottom: solid 2px #dddddd;
-    padding-bottom: 15px;
-}
-
-/*position: fixed allows the footer to stay at the bottom of the page.*/
 footer {
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 10px;
-    background-color: #666666;
+    font-size: 0.75em;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    background-color: #2b2727;
     color: #858383;
-    border-top: solid 8px #4aaaa5;
+    border-top: solid 2px #1B86C1;
     position: fixed;
     bottom: 0;
     width: 100%;
 }
 
-/*The portfolio footer position is made relative so that it can be placed after all of the content*/
-footer.p-footer {
-    position: relative;
-}
 
-#profile-pic{
-    float: left;
-    width: 200px;
-    height: 200px;
-}
+@media screen and (max-width: 980px){
+    .header-main{
+        border-bottom: solid 1px #1B86C1;
+        margin-bottom: 35px;
+    }
+    
+    #profile-pic{
+        max-width: 200px;
+        margin: auto;
+        margin-bottom: 15px;
+        display: block;
+    }
 
-#profile-bio{
-    float: left;
-    width: 70%;
-    margin-left: 20px;
-}
-
-.intro::after,
-.proj-row::after{
-    display: block;
-    content: "";
-    clear: both;
-}
-
-.project{
-    float: left;
-    width: 200px;
-    height: 175px;
-    /*background-image: url("http://lorempixel.com/200/200/");*/
-    margin: 15px 50px 15px 0px;
-    text-align: center;
-    position: relative;
-}
-
-/*position absolute only works when parent position (.project) is relative*/
-.project a{
-    text-decoration: none;
-    color: #ffffff;
-    background-color: #4aaaa5;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    margin-bottom: 15px;
-    padding: 15px 0px;
-}
-
-#proj1{
-    background-image: url("../images/proj1.jpg");
-}
-
-#proj2{
-    background-image: url("../images/proj2.jpg");
-}
-
-#proj3{
-    background-image: url("../images/proj3.jpg");
-}
-
-#proj4{
-    background-image: url("../images/proj4.jpg");
-}
-
-#proj5{
-    background-image: url("../images/proj5.jpg");
-}
-
-form p{
-    margin: 5px 0px;
-}
-
-input[type="text"]{
-    width: 100%;
-}
-
-/*max-width prevents text box from extending outside of main content area*/
-textarea{
-    width: 100%;
-    max-width: 100%;
-}
-
-input[type="submit"]{
-    background: #4aaaa5;
-    border: 0 none;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #ffffff;
-    padding: 10px 20px;
-    margin-top: 15px;
+    .proj-box{
+        max-width: 350px;
+        margin: auto;
+        margin-bottom: 15px;
+        display: block;
+    }
 }
