@@ -37,8 +37,9 @@
                 </ul>
             </div>
         </nav>
-        <main id="bio" class="container-fluid">
-            <div class="container-fluid">
+        <main class="container-fluid">
+            <!-- Bio Section -->
+            <div id="bio" class="container-fluid main-chunk">
                 <div class="row">
                     <div class="col">
                         <h1 class="header-main">About Me</h1>
@@ -49,10 +50,13 @@
                         <img id="profile-pic" class="img-responsive shadow" src="assets/images/profile-pic.jpg" alt="Profile Picture">
                     </div>
                     <div class="col-lg-9 col-md-8 col-xs-12">
-                        <p>My name is Phillip Booker. This is the first draft of my portfolio. I hope to have some good content here soon!</p>
+                        <p>My name is Phillip Booker. I graduated with a Bachelor of Science in computer engineering in 2014. Here are a few projects I have recently created.</p>
+                        <p>
+                            Outside of work and class I enjoy playing fighting games semi-competitively. I also have a passion for learning and helping others learn in the process. One of my dream projects is to be able to create a website/app that someone can use to learn something new!
+                        </p>
                     </div>
                 </div>
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-md-12 col-xs-12">
                         <p>
                             I graduated with a Bachelor of Science in computer engineering in 2014. I have basic programming knowledge, but I'm not very familiar with web development and have very little project experience. This bootcamp should be the perfect opportunity to fix that.
@@ -65,8 +69,151 @@
                             Outside of work and class I enjoy playing fighting games semi-competitively. I also have a passion for learning and helping others learn in the process. One of my dream projects is to be able to create a website/app that someone can use to learn something new!
                         </p>
                     </div>
+                </div> -->
+            </div>
+
+            <!-- Featured Projects -->
+            <div id="featured-projects" class="container-fluid main-chunk">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="header-main">Featured Projects</h1>
+                    </div>
+                </div>
+                <div id="featured-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#featured-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#featured-carousel" data-slide-to="1"></li>
+                        <li data-target="#featured-carousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-pic-box carousel-item active">
+                            <img class="d-block w-100 proj-pic-main" src="assets/images/rpg.JPG" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>RPG Game</h5>
+                                <p><a href="https://phillipbooker.github.io/unit-4-game/">Deployed Project</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-pic-box carousel-item">
+                            <img class="d-block w-100 proj-pic-main" src="assets/images/trivia.JPG" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Trivia Game</h5>
+                                <p><a href="https://phillipbooker.github.io/TriviaGame/">Deployed Project</a></p>
+                            </div>
+                        </div>
+                        <div class="carousel-pic-box carousel-item">
+                            <img class="d-block w-100 proj-pic-main" src="assets/images/hero.JPG" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Hero Game</h5>
+                                <p><a href="https://phillipbooker.github.io/group-project-1/">Deployed Project</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#featured-carousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#featured-carousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                 </div>
             </div>
+            
+
+            
+
+            <!-- Other Projects -->
+            <div id="other-projects" class="container-fluid main-chunk">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="header-main">Additional Projects (Homework Assignments)</h3>
+                    </div>
+                </div>
+                <div id="flex-projects" class="row flex-row flex-nowrap proj-box-wrapper">
+                    <div class="col-md-4">
+                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
+                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/hangman.jpg" alt="Project Picture">
+                            <div class="card-body proj-card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/Word-Guess-Game/"><h5>Hangman</h5></a>
+                                <p class="card-text">A basketball themed game of Hangman!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
+                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/rpg.JPG" alt="Project Picture">
+                            <div class="card-body proj-card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/unit-4-game/"><h5>RPG Game</h5></a>
+                                <p class="card-text">Choose one of four Star Wars character in this RPG battle game!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
+                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/trivia.JPG" alt="Project Picture">
+                            <div class="card-body proj-card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/TriviaGame/"><h5>Trivia Game</h5></a>
+                                <p class="card-text">Dragon Ball Z Trivia!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
+                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/gif-search.JPG" alt="Project Picture">
+                            <div class="card-body proj-card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/GifGrab/"><h5>GIPHY Search</h5></a>
+                                <p class="card-text">Search for GIFs of your favorite cartoons using this GIPHY API powered app!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
+                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/rps.JPG" alt="Project Picture">
+                            <div class="card-body proj-card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/RPS-Multiplayer/"><h5>Rock Paper Scissors</h5></a>
+                                <p class="card-text">A multiplayer Rock Paper Scissors game powered by Firebase!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
+                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/hero.JPG" alt="Project Picture">
+                            <div class="card-body proj-card-body">
+                                <a class="card-title" href="https://phillipbooker.github.io/group-project-1/"><h5>Marvel Hero Battle</h5></a>
+                                <p class="card-text">A multiplayer Hero Battle game featuring Marvel heroes powered by Firebase!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+
+            <!-- Contact -->
+            <div id="contact" class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <h1 class="header-main">Contact</h1>
+                    </div>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="nameInput">Name</label>
+                        <input id="nameInput" class="form-control" type="text" placeholder="First Last">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput">Email address</label>
+                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="address@email.com">
+                        <small id="emailHelp" class="form-text text-muted">Must be a valid email address.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="messageInput">Message</label>
+                        <textarea class="form-control" id="messageInput" rows="3" placeholder="Enter your message here :)"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+
         </main>
         
         <footer class="page-footer">

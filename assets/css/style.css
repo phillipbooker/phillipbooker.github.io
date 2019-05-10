@@ -1,9 +1,16 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-image: url("../images/prism.png");
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     /* height: 100vh; */
 }
 
+.main-chunk{
+    margin: 30px auto;
+}
 
 nav{
     /* margin-bottom: 15px; */
@@ -71,6 +78,50 @@ a:hover{
     /* max-width: 250px; */
 }
 
+#other-project-box{
+    height: 350px;
+    width: 500px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: #e9e9e9;
+}
+
+#flex-projects{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.proj-box-other{
+    background-color: #e9e9e9;
+    margin: 5px 10px;
+    /* height: 275px; */
+    /* float: left; */
+    font-size: 0.85em;
+    /* display: inline; */
+}
+
+
+
+/* .clearfix{
+    overflow: auto;
+} */
+
+.proj-card-top{
+    height: 150px;
+}
+
+.proj-card-body{
+    height: 125px;
+}
+
+/* .clearfix::after{
+    content: "";
+    clear: both;
+    display: block;
+} */
+
 /* .proj-pic{
     max-width: 200px;
 } */
@@ -78,6 +129,22 @@ a:hover{
 .proj-pic.card-img-top{
     height: 150px;
     object-fit: cover;
+}
+
+.proj-pic-main{
+    min-height: 300px;
+    object-fit: cover;
+    /* min-height: 150px;
+    max-height: 400px; */
+}
+
+.carousel-pic-box{
+    height: 300px;
+    object-fit: cover;
+}
+
+#featured-carousel{
+    padding: 0px 50px;
 }
 
 .proj-link{
@@ -124,12 +191,12 @@ footer {
     text-align: center;
     font-size: 0.75em;
     padding-top: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
     background-color: #2b2727;
     color: #858383;
     border-top: solid 2px #1B86C1;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
     width: 100%;
 }
 
