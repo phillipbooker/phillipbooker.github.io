@@ -11,14 +11,19 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
         
+        <!-- Fontawesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
 
         <title>Phillip Booker</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><h1>Phillip Booker</h1></a>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html"><h3>Phillip Booker</h3></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
@@ -26,13 +31,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#featured-projects">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -40,43 +45,32 @@
         <main class="container-fluid">
             <!-- Bio Section -->
             <div id="bio" class="container-fluid main-chunk">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="header-main">About Me</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-xs-12">
+                <div class="row mb-5">
+                    <div class="col-lg-3 col-md-4 col-12">
                         <img id="profile-pic" class="img-responsive shadow" src="assets/images/profile-pic.jpg" alt="Profile Picture">
                     </div>
-                    <div class="col-lg-9 col-md-8 col-xs-12">
-                        <p>My name is Phillip Booker. I graduated with a Bachelor of Science in computer engineering in 2014. Here are a few projects I have recently created.</p>
-                        <p>
-                            Outside of work and class I enjoy playing fighting games semi-competitively. I also have a passion for learning and helping others learn in the process. One of my dream projects is to be able to create a website/app that someone can use to learn something new!
-                        </p>
-                    </div>
-                </div>
-                <!-- <div class="row">
-                    <div class="col-md-12 col-xs-12">
-                        <p>
-                            I graduated with a Bachelor of Science in computer engineering in 2014. I have basic programming knowledge, but I'm not very familiar with web development and have very little project experience. This bootcamp should be the perfect opportunity to fix that.
-                        </p>
+                    <div class="col-lg-9 col-md-8 col-12">
+                        <h1 class="big-name">Phillip Booker</h1>
+                        <p class="titles">Full-stack developer (In Training)</p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-xs-12">
+                    <div class="col-12">
+                        <h1 class="header-main">About Me</h1>
+                        <p>My name is Phillip Booker. I graduated with a Bachelor of Science in computer engineering in 2014.</p>
                         <p>
                             Outside of work and class I enjoy playing fighting games semi-competitively. I also have a passion for learning and helping others learn in the process. One of my dream projects is to be able to create a website/app that someone can use to learn something new!
                         </p>
+                        <p>Here are a few projects I have recently created!</p>
                     </div>
-                </div> -->
+                </div>
             </div>
 
             <!-- Featured Projects -->
-            <div id="featured-projects" class="container-fluid main-chunk">
+            <div id="featured-projects" class="container-fluid main-chunk mb-5">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="header-main">Featured Projects</h1>
+                        <h1 class="header-main nav-target">Featured Projects</h1>
                     </div>
                 </div>
                 <div id="featured-carousel" class="carousel slide" data-ride="carousel">
@@ -90,21 +84,24 @@
                             <img class="d-block w-100 proj-pic-main" src="assets/images/rpg.JPG" alt="First slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>RPG Game</h5>
-                                <p><a href="https://phillipbooker.github.io/unit-4-game/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://phillipbooker.github.io/unit-4-game/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/unit-4-game/">Github Repository</a></p>
                             </div>
                         </div>
                         <div class="carousel-pic-box carousel-item">
                             <img class="d-block w-100 proj-pic-main" src="assets/images/trivia.JPG" alt="Second slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Trivia Game</h5>
-                                <p><a href="https://phillipbooker.github.io/TriviaGame/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://phillipbooker.github.io/TriviaGame/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/TriviaGame">Github Repository</a></p>
                             </div>
                         </div>
                         <div class="carousel-pic-box carousel-item">
                             <img class="d-block w-100 proj-pic-main" src="assets/images/hero.JPG" alt="Third slide">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Hero Game</h5>
-                                <p><a href="https://phillipbooker.github.io/group-project-1/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://phillipbooker.github.io/group-project-1/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/group-project-1">Github Repository</a></p>
                             </div>
                         </div>
                     </div>
@@ -130,7 +127,7 @@
                     </div>
                 </div>
                 <div id="flex-projects" class="row flex-row flex-nowrap proj-box-wrapper">
-                    <div class="col-md-4 col-sm-8 col-12">
+                    <div class="col-md-4 col-sm-6 col-12">
                         <div class="proj-box-other card shadow-sm proj-box-wrapper">
                             <img class="card-img-top proj-pic proj-card-top" src="assets/images/hangman.jpg" alt="Project Picture">
                             <div class="card-body proj-card-body">
@@ -139,7 +136,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-8 col-12">
+                    <div class="col-md-4 col-sm-6 col-12">
                         <div class="proj-box-other card shadow-sm proj-box-wrapper">
                             <img class="card-img-top proj-pic proj-card-top" src="assets/images/rpg.JPG" alt="Project Picture">
                             <div class="card-body proj-card-body">
@@ -148,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-8 col-12">
+                    <div class="col-md-4 col-sm-6 col-12">
                         <div class="proj-box-other card shadow-sm proj-box-wrapper">
                             <img class="card-img-top proj-pic proj-card-top" src="assets/images/trivia.JPG" alt="Project Picture">
                             <div class="card-body proj-card-body">
@@ -157,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-8 col-12">
+                    <div class="col-md-4 col-sm-6 col-12">
                         <div class="proj-box-other card shadow-sm proj-box-wrapper">
                             <img class="card-img-top proj-pic proj-card-top" src="assets/images/gif-search.JPG" alt="Project Picture">
                             <div class="card-body proj-card-body">
@@ -166,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-8 col-12">
+                    <div class="col-md-4 col-sm-6 col-12">
                         <div class="proj-box-other card shadow-sm proj-box-wrapper">
                             <img class="card-img-top proj-pic proj-card-top" src="assets/images/rps.JPG" alt="Project Picture">
                             <div class="card-body proj-card-body">
@@ -175,7 +172,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-8 col-12">
+                    <div class="col-md-4 col-sm-6 col-12">
                         <div class="proj-box-other card shadow-sm proj-box-wrapper">
                             <img class="card-img-top proj-pic proj-card-top" src="assets/images/hero.JPG" alt="Project Picture">
                             <div class="card-body proj-card-body">
@@ -192,26 +189,32 @@
             <!-- Contact -->
             <div id="contact" class="container-fluid">
                 <div class="row">
-                    <div class="col-md-12 col-xs-12">
+                    <div class="col-md-5 col-sm-5 col-12 col-centered">
                         <h1 class="header-main">Contact</h1>
                     </div>
                 </div>
-                <form>
-                    <div class="form-group">
-                        <label for="nameInput">Name</label>
-                        <input id="nameInput" class="form-control" type="text" placeholder="First Last">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailInput">Email address</label>
-                        <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="address@email.com">
-                        <small id="emailHelp" class="form-text text-muted">Must be a valid email address.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="messageInput">Message</label>
-                        <textarea class="form-control" id="messageInput" rows="3" placeholder="Enter your message here :)"></textarea>
-                    </div>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
+                <div id="contact-links" class="col-md-5 col-sm-5 col-12 list-group col-centered">
+                    <a href="https://github.com/phillipbooker">
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <i class="fab fa-github-square"></i>  Github
+                        </button>
+                    </a>
+                    <a href="https://linkedin.com/in/phillippbooker">
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <i class="fab fa-linkedin"></i>  LinkedIn
+                        </button>
+                    </a>
+                    <a href="#">
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <i class="far fa-file"></i>  Resume
+                        </button>
+                    </a>
+                    <a href="mailto:phillippbooker@gmail.com">
+                        <button type="button" class="list-group-item list-group-item-action">
+                            <i class="fas fa-envelope"></i>  Email
+                        </button>
+                    </a>
+                </div>
             </div>
 
         </main>

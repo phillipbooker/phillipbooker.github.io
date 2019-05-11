@@ -12,6 +12,10 @@ body{
     margin: 30px auto;
 }
 
+.col-centered{
+    margin: 0 auto;
+}
+
 nav{
     /* margin-bottom: 15px; */
     border-bottom: solid 1.5px #1B86C1;
@@ -43,8 +47,13 @@ h1, h2, h3, h4{
     /* font-family: 'Georgia', Times, Times New Roman, serif; */
 }
 
+.nav-target{
+    margin-top: 80px;
+}
+
 a{
     color: #2055AA;
+    font-family: 'Josefin Slab', serif;
 }
 
 a:hover{
@@ -57,7 +66,22 @@ a:hover{
     margin-bottom: 20px;
 }
 
+.big-name{
+    font-size: 3em;
+    border-bottom: solid 1px #1B86C1;
+    margin-bottom: 20px;
+}
+
+.titles{
+    color: #2055AA;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.15em;
+}
+
 /* Bio Page */
+#bio{
+    margin-top: 5px;
+}
 
 #profile-pic{
     max-width: 300px;
@@ -143,6 +167,15 @@ a:hover{
     object-fit: cover;
 }
 
+.carousel-caption{
+    color: black;
+    border: solid 1px #2055AA;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    background-color: rgb(192, 192, 192, 0.90);
+    border-radius: 15px;
+}
+
 #featured-carousel{
     
 }
@@ -177,7 +210,15 @@ a:hover{
 /* Contact Page */
 
 #contact{
-    max-width: 500px;
+    /* max-width: 500px; */
+}
+
+#contact-links{
+    margin-bottom: 50px;
+}
+
+a.contact-link{
+    width: 100%;
 }
 
 .btn{
