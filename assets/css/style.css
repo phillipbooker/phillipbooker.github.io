@@ -8,10 +8,6 @@ body{
     /* height: 100vh; */
 }
 
-.main-chunk{
-    margin: 30px auto;
-}
-
 .col-centered{
     margin: 0 auto;
 }
@@ -41,14 +37,14 @@ main{
     border-radius: 3px;
 }
 
+.main-chunk{
+    margin: 30px auto;
+}
+
 h1, h2, h3, h4{
     color: #2055AA;
     font-family: 'Josefin Slab', serif;
     /* font-family: 'Georgia', Times, Times New Roman, serif; */
-}
-
-.nav-target{
-    margin-top: 80px;
 }
 
 a{
@@ -66,21 +62,19 @@ a:hover{
     margin-bottom: 20px;
 }
 
+
+
+
+
+/* Bio */
+#bio{
+    margin-top: 5px;
+}
+
 .big-name{
     font-size: 3em;
     border-bottom: solid 1px #1B86C1;
     margin-bottom: 20px;
-}
-
-.titles{
-    color: #2055AA;
-    font-family: 'Josefin Slab', serif;
-    font-size: 1.15em;
-}
-
-/* Bio Page */
-#bio{
-    margin-top: 5px;
 }
 
 #profile-pic{
@@ -91,7 +85,11 @@ a:hover{
 }
 
 
-/* Portfolio Page */
+/* Featured Projects */
+.nav-target{
+    margin-top: 80px;
+}
+
 #portfolio{
     max-width: 700px;
 }
@@ -102,6 +100,34 @@ a:hover{
     /* max-width: 250px; */
 }
 
+.titles{
+    color: #2055AA;
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.15em;
+}
+
+.carousel-pic-box{
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-caption{
+    color: black;
+    border: solid 1px #2055AA;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    background-color: rgb(192, 192, 192, 0.90);
+    border-radius: 15px;
+}
+
+.proj-pic-main{
+    min-height: 300px;
+    object-fit: cover;
+    /* min-height: 150px;
+    max-height: 400px; */
+}
+
+/* Other projects */
 #other-project-box{
     height: 350px;
     width: 500px;
@@ -126,12 +152,6 @@ a:hover{
     /* display: inline; */
 }
 
-
-
-/* .clearfix{
-    overflow: auto;
-} */
-
 .proj-card-top{
     height: 150px;
 }
@@ -140,11 +160,6 @@ a:hover{
     height: 125px;
 }
 
-/* .clearfix::after{
-    content: "";
-    clear: both;
-    display: block;
-} */
 
 /* .proj-pic{
     max-width: 200px;
@@ -155,29 +170,13 @@ a:hover{
     object-fit: cover;
 }
 
-.proj-pic-main{
-    min-height: 300px;
-    object-fit: cover;
-    /* min-height: 150px;
-    max-height: 400px; */
+.card-body{
+    background-color: rgb(224, 224, 224);
+    border: solid 1px silver;
 }
 
-.carousel-pic-box{
-    height: 300px;
-    object-fit: cover;
-}
-
-.carousel-caption{
-    color: black;
-    border: solid 1px #2055AA;
-    font-family: 'Josefin Slab', serif;
-    font-weight: bold;
-    background-color: rgb(192, 192, 192, 0.90);
-    border-radius: 15px;
-}
-
-#featured-carousel{
-    
+.proj-box .card-body{
+    height: 140px;
 }
 
 .proj-link{
@@ -194,21 +193,12 @@ a:hover{
     text-decoration: none;
 }
 
-.card-body{
-    background-color: rgb(224, 224, 224);
-    border: solid 1px silver;
-}
-
-.proj-box .card-body{
-    height: 140px;
-}
-
 /* .proj-box{
     border: solid 1px #1B86C1;
 } */
 
-/* Contact Page */
 
+/* Contact */
 #contact{
     /* max-width: 500px; */
 }
