@@ -116,7 +116,8 @@ a:hover{
     border: solid 1px #2055AA;
     font-family: 'Josefin Slab', serif;
     font-weight: bold;
-    background-color: rgb(192, 192, 192, 0.90);
+    background-color: rgb(192, 192, 192);
+    background-color: rgba(192, 192, 192, 0.90);
     border-radius: 15px;
 }
 
