@@ -60,3 +60,20 @@ header,
 .caption-link:hover{
     color: white;
 }
+
+@media only screen and (max-width: 992px) {
+    .carousel-feature{
+        border: solid .5px rgb(128, 128, 128);
+        border-radius: 10px;
+    }
+
+    #feature-proj-1{
+        background-size: contain;
+    }
+    #feature-proj-2{
+        background-size: contain;
+    }
+    #feature-proj-3{
+        background-size: contain;
+    }
+}
