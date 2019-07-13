@@ -1,62 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required for responsive viewports -->
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!--  Fonts  -->
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet">
+    <!-- External bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
 
-        <!-- External bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
-        
-        <!-- Fontawesome -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="assets/css/style.css">
-
-        <title>Phillip Booker - Portfolio</title>
-    </head>
-    <body>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index.html"><h2>Phillip Booker</h2></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <title>Reboot Portfolio</title>
+</head>
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand scroll-link" href="#intro">Phillip Booker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#featured-projects">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+            
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#featured">Featured Projects <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#homework">Homework</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link scroll-link" href="#contact">Contact</a>
+                </li>
                 </ul>
             </div>
         </nav>
-        <main class="container-fluid">
-            <!-- Bio Section -->
-            <div id="bio" class="container-fluid main-chunk">
-                <div class="row mt-3 mb-5">
-                    <div class="col-lg-3 col-md-4 col-12">
-                        <img id="profile-pic" class="img-responsive shadow" src="assets/images/profile-pic.jpg" alt="Profile Picture">
+        <!--/.Navbar-->
+        <!--Mask-->
+        <div id="intro" class="view">
+            <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+                <div class="row d-flex justify-content-center text-center text-white">
+                    <div class="col-md-12">
+                        <!-- Heading -->
+                        <h2 class="display-4 font-weight-bold white-text pt-5 mb-2">Phillip Booker</h2>
+                                        
+                        <!-- Divider -->
+                        <hr class="hr-light">
+
+                        <!-- Description -->
+                        <h4 class="white-text my-4">Full Stack Developer (In Training)</h4>
+                        <a href=#bio class="scroll-link"><button type="button" class="btn btn-outline-white">Read more<i class="fas fa-book ml-2"></i></button></a>
                     </div>
-                    <div class="col-lg-9 col-md-8 col-12">
-                        <h1 class="big-name">Phillip Booker</h1>
-                        <p class="titles">Full-stack developer (In Training)</p>
-                    </div>
+                    
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="header-main">About Me</h1>
+            </div>
+        </div>
+        <!--/.Mask-->
+    </header>
+    <main class="mt-5">
+        <div class="container">
+            <section id="bio" class="text-center">
+                <hr class="my-5">
+                <h1 class="py-5 font-weight-bold text-center">About Me</h1>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-3 mb-5">
+                        <img src="assets/images/profile-pic.jpg" class="img-fluid">
+                    </div>
+                    <div class="col-md-5 mb-5">
                         <p>My name is Phillip Booker. I graduated with a Bachelor of Science in computer engineering in 2014.</p>
                         <p>
                             Outside of work and class I enjoy playing fighting games semi-competitively. I also have a passion for learning and helping others learn in the process. One of my dream projects is to be able to create a website/app that someone can use to learn something new!
@@ -64,181 +79,299 @@
                         <p>Here are a few projects I have recently created!</p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <!-- Featured Projects -->
-            <div id="featured-projects" class="container-fluid main-chunk mb-5">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h1 class="header-main nav-target">Featured Projects</h1>
+            
+            <section id="featured">
+                <hr class="my-5">
+                <h1 class="py-5 mb-5 font-weight-bold text-center">Featured Projects</h1>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-3 mb-5">
+                        <p>Here are a few of my recently deployed projects.</p>
+                    </div>
+                    <div class="col-md-7 mb-5">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="mb-1 carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div id="feature-proj-1" class="carousel-feature carousel-item active">
+                                    <!-- <img class="d-block h-100 m-auto" src="assets/images/trivia.JPG" alt="First slide"> -->
+                                    <div class="py-1 carousel-caption">
+                                        <h5>DRES</h5>
+                                        <p class="mb-0"><a class="caption-link" href="https://dresfit.herokuapp.com/">Deployed Project</a></p>
+                                        <p class="mb-0"><a class="caption-link" href="https://github.com/phillipbooker/group-project-2">Github Repository</a></p>
+                                    </div>
+                                </div>
+                                <div id="feature-proj-2" class="carousel-feature carousel-item">
+                                    <!-- <img class="d-block h-100 m-auto" src="assets/images/rpg.JPG" alt="Second slide"> -->
+                                    <div class="py-1 carousel-caption">
+                                        <h5>DBZ Trivia</h5>
+                                        <p class="mb-0"><a class="caption-link" href="https://phillipbooker.github.io/TriviaGame/">Deployed Project</a></p>
+                                        <p class="mb-0"><a class="caption-link" href="https://github.com/phillipbooker/TriviaGame/">Github Repository</a></p>
+                                    </div>
+                                </div>
+                                <div id="feature-proj-3" class="carousel-feature carousel-item">
+                                    <!-- <img class="d-block h-100 m-auto" src="assets/images/hero.JPG" alt="Third slide"> -->
+                                    <div class="py-1 carousel-caption">
+                                        <h5>Hero Game</h5>
+                                        <p class="mb-0"><a class="caption-link" href="https://phillipbooker.github.io/group-project-1/">Deployed Project</a></p>
+                                        <p class="mb-0"><a class="caption-link" href="https://github.com/phillipbooker/group-project-1">Github Repository</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            </div>
                     </div>
                 </div>
-                <div id="featured-carousel" class="carousel slide" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#featured-carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#featured-carousel" data-slide-to="1"></li>
-                        <li data-target="#featured-carousel" data-slide-to="2"></li>
-                    </ol>
-                    <div class="carousel-inner">
-                        <div class="carousel-pic-box carousel-item active">
-                            <img class="d-block w-100 proj-pic-main" src="assets/images/rpg.JPG" alt="First slide">
-                            <div class="carousel-caption">
-                                <h5>RPG Game</h5>
-                                <p class="mb-0"><a href="https://phillipbooker.github.io/unit-4-game/">Deployed Project</a></p>
-                                <p class="mb-0"><a href="https://github.com/phillipbooker/unit-4-game/">Github Repository</a></p>
+            </section>
+
+            
+            <section id="homework">
+                <hr class="my-5">
+                <h1 class="py-5 mb-5 font-weight-bold text-center">Homework Assignments</h1>
+                <div class="row">
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Hangman
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/hangman.jpg" alt="Hangman">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0"><a href="https://phillipbooker.github.io/Word-Guess-Game/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/Word-Guess-Game">Github Repository</a></p>
                             </div>
                         </div>
-                        <div class="carousel-pic-box carousel-item">
-                            <img class="d-block w-100 proj-pic-main" src="assets/images/trivia.JPG" alt="Second slide">
-                            <div class="carousel-caption">
-                                <h5>Trivia Game</h5>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                RPG Game
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail img-fluid" src="assets/images/rpg.JPG" alt="RPG">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0"><a href="https://phillipbooker.github.io/unit-4-game/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/unit-4-game">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Trivia Game
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/trivia.JPG" alt="Trivia">
+                            </div>
+                            <div class="card-footer text-muted">
                                 <p class="mb-0"><a href="https://phillipbooker.github.io/TriviaGame/">Deployed Project</a></p>
                                 <p class="mb-0"><a href="https://github.com/phillipbooker/TriviaGame">Github Repository</a></p>
                             </div>
                         </div>
-                        <div class="carousel-pic-box carousel-item">
-                            <img class="d-block w-100 proj-pic-main" src="assets/images/hero.JPG" alt="Third slide">
-                            <div class="carousel-caption">
-                                <h5>Hero Game</h5>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                GIPHY Search
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/gif-search.JPG" alt="GIF Search">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0"><a href="https://phillipbooker.github.io/GifGrab/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/GifGrab">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Rock Paper Scissors
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/rps.JPG" alt="RPS">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0"><a href="https://phillipbooker.github.io/RPS-Multiplayer/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/RPS-Multiplayer">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Marvel Hero Battle
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/hero.JPG" alt="Hero">
+                            </div>
+                            <div class="card-footer text-muted">
                                 <p class="mb-0"><a href="https://phillipbooker.github.io/group-project-1/">Deployed Project</a></p>
                                 <p class="mb-0"><a href="https://github.com/phillipbooker/group-project-1">Github Repository</a></p>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#featured-carousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#featured-carousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                LIRI Bot
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/liri.JPG" alt="LIRI">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0">Deployed Project</p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/liri-node-app">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Bamazon
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/bamazon.jpg" alt="Bamazon">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0">Deployed Project</p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/bamazon">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Friend Finder
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/friend.JPG" alt="Friend Finder">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0"><a href="https://friend-finder-fshw.herokuapp.com/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/FriendFinder">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Eat That Burger!
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/burger.JPG" alt="Burger">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0"><a href="https://burger-hw-fsf.herokuapp.com/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/burger">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-5">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                DRES
+                            </div>
+                            <div class="card-body">
+                                <img class="img-thumbnail" src="assets/images/dres.JPG" alt="DRES">
+                            </div>
+                            <div class="card-footer text-muted">
+                                <p class="mb-0"><a href="https://dresfit.herokuapp.com/">Deployed Project</a></p>
+                                <p class="mb-0"><a href="https://github.com/phillipbooker/group-project-2">Github Repository</a></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
+            </section>
 
             
+            <section id="contact">
+                <hr class="my-5">
+                <h1 class="py-5 mb-5 font-weight-bold text-center">Contact</h1>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 text-center">
+                        <p>Use the links below to contact me!</p>
+                    </div>
+                </div>
+                <div class="row py-4 d-flex justify-content-center align-items-center">
+        
+                    <!--Grid column-->
+                    <div class="col-md-6 col-lg-7 text-center">
+                        <!--Facebook-->
+                        <a class="fb-ic ml-0 social-link" href="https://github.com/phillipbooker">
+                            <i class="fab fa-github mx-4" data-placement="top" data-toggle="popover" data-trigger="hover" data-content="Github"> </i>
+                        </a>
+                        <!--Linkedin-->
+                        <a class="li-ic social-link" href="https://linkedin.com/in/phillippbooker">
+                            <i class="fab fa-linkedin-in white-text mx-4" data-placement="top" data-toggle="popover" data-trigger="hover" data-content="LinkedIn"> </i>
+                        </a>
+                        <!--Resume-->
+                        <a class="tw-ic social-link" href="https://drive.google.com/file/d/1eRiyIFE84TKtSqfyRHCEXD8KNmLujaCN/view?usp=sharing">
+                            <i class="far fa-file white-text mx-4" data-placement="top" data-toggle="popover" data-trigger="hover" data-content="Resume"> </i>
+                        </a>
+                        <!--Email-->
+                        <a class="gplus-ic social-link" href="mailto:phillippbooker@gmail.com">
+                            <i class="fas fa-envelope white-text mx-4" data-placement="top" data-toggle="popover" data-trigger="hover" data-content="Email"> </i>
+                        </a>
+                    </div>
+                    <!--Grid column-->
 
-            <!-- Other Projects -->
-            <div id="other-projects" class="container-fluid main-chunk">
-                <div class="row">
-                    <div class="col-md-12">
-                        <h3 class="header-main">Additional Projects (Homework Assignments)</h3>
-                    </div>
                 </div>
-                <div id="flex-projects" class="row flex-row flex-nowrap proj-box-wrapper">
-                    <div class="col-md-4 col-sm-6 col-10">
-                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
-                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/hangman.jpg" alt="Project Picture">
-                            <div class="card-body proj-card-body">
-                                <a class="card-title" href="https://phillipbooker.github.io/Word-Guess-Game/"><h5>Hangman</h5></a>
-                                <p class="card-text">A basketball themed game of Hangman!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-10">
-                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
-                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/rpg.JPG" alt="Project Picture">
-                            <div class="card-body proj-card-body">
-                                <a class="card-title" href="https://phillipbooker.github.io/unit-4-game/"><h5>RPG Game</h5></a>
-                                <p class="card-text">Choose one of four Star Wars character in this RPG battle game!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-10">
-                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
-                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/trivia.JPG" alt="Project Picture">
-                            <div class="card-body proj-card-body">
-                                <a class="card-title" href="https://phillipbooker.github.io/TriviaGame/"><h5>Trivia Game</h5></a>
-                                <p class="card-text">Dragon Ball Z Trivia!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-10">
-                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
-                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/gif-search.JPG" alt="Project Picture">
-                            <div class="card-body proj-card-body">
-                                <a class="card-title" href="https://phillipbooker.github.io/GifGrab/"><h5>GIPHY Search</h5></a>
-                                <p class="card-text">Search for GIFs of your favorite cartoons using this GIPHY API powered app!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-10">
-                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
-                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/rps.JPG" alt="Project Picture">
-                            <div class="card-body proj-card-body">
-                                <a class="card-title" href="https://phillipbooker.github.io/RPS-Multiplayer/"><h5>Rock Paper Scissors</h5></a>
-                                <p class="card-text">A multiplayer Rock Paper Scissors game powered by Firebase!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-10">
-                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
-                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/hero.JPG" alt="Project Picture">
-                            <div class="card-body proj-card-body">
-                                <a class="card-title" href="https://phillipbooker.github.io/group-project-1/"><h5>Marvel Hero Battle</h5></a>
-                                <p class="card-text">A multiplayer Hero Battle game featuring Marvel heroes powered by Firebase!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-10">
-                        <div class="proj-box-other card shadow-sm proj-box-wrapper">
-                            <img class="card-img-top proj-pic proj-card-top" src="assets/images/liri.JPG" alt="Project Picture">
-                            <div class="card-body proj-card-body">
-                                <a class="card-title" href="https://github.com/phillipbooker/liri-node-app"><h5>LIRI</h5></a>
-                                <p class="card-text">A Language Interpretation and Recognition Interface powered by Node.js!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </section>
+
+            <footer class="page-footer font-small unique-color-dark">
                 
-            </div>
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2019 Copyright</div>
+                <!-- Copyright -->
+            </footer>
 
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover(); 
+        });
 
-            <!-- Contact -->
-            <div id="contact" class="container-fluid">
-                <div class="row">
-                    <div class="col-md-5 col-sm-5 col-12 col-centered">
-                        <h1 class="header-main">Contact</h1>
-                    </div>
-                </div>
-                <div id="contact-links" class="col-md-5 col-sm-5 col-12 list-group col-centered">
-                    <a href="https://github.com/phillipbooker">
-                        <button type="button" class="list-group-item list-group-item-action">
-                            <i class="fab fa-github-square"></i>  Github
-                        </button>
-                    </a>
-                    <a href="https://linkedin.com/in/phillippbooker">
-                        <button type="button" class="list-group-item list-group-item-action">
-                            <i class="fab fa-linkedin"></i>  LinkedIn
-                        </button>
-                    </a>
-                    <a href="https://drive.google.com/file/d/1eRiyIFE84TKtSqfyRHCEXD8KNmLujaCN/view?usp=sharing">
-                        <button type="button" class="list-group-item list-group-item-action">
-                            <i class="far fa-file"></i>  Resume
-                        </button>
-                    </a>
-                    <a href="mailto:phillippbooker@gmail.com">
-                        <button type="button" class="list-group-item list-group-item-action">
-                            <i class="fas fa-envelope"></i>  Email
-                        </button>
-                    </a>
-                </div>
-            </div>
+        $("a[href^='#'].scroll-link").on("click", function(e) {
+            // prevent default anchor click behavior
+            e.preventDefault();
 
-        </main>
-        
-        <footer class="page-footer">
-            <div class="containter text-center">
-                <p>
-                    Copyright 2019 &copy;
-                </p>
-            </div>
-        </footer>
-        
+            console.log(e);
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    </body>
+            // store hash
+            var hash = this.hash;
+
+            // animate
+            $("html, body").animate(
+                {
+                    scrollTop: $(hash).offset().top
+                },
+                1000,
+                function() {
+                    // when done, add hash to url
+                    // (default click behaviour)
+                    window.location.hash = hash;
+                }
+            );
+        });
+
+    </script>
+</body>
 </html>

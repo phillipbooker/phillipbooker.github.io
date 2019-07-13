@@ -2,253 +2,61 @@
     box-sizing: border-box;
 }
 
-body{
-    background-image: url("../images/prism.png");
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    /* height: 100vh; */
+/* All of these will take 100% of the screen's height */
+html,
+body,
+header,
+#intro {
+    height: 100vh;
 }
 
-.col-centered{
-    margin: 0 auto;
+#intro{
+    filter: grayscale(5%);
 }
 
-nav{
-    /* margin-bottom: 15px; */
-    border-bottom: solid 1.5px #1B86C1;
-    background-color: #f3f3f3;
+#intro {
+    background: url("../images/clouds.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-/* Used for navbar background */
-.bg-light{
-    background-color: #f3f3f3;
-}
-
-header{
-    text-align: center;
-}
-
-main{
-    padding: 15px;
-    max-width: 960px;
-    background-color: #e9e9e9;
-    border: solid 1px #dddddd;
-    margin-top: 10px;
-    margin-bottom: 100px;
-    border-radius: 3px;
-}
-
-.main-chunk{
-    margin: 30px auto;
-}
-
-h1, h2, h3, h4{
-    color: #2055AA;
-    font-family: 'Josefin Slab', serif;
-    /* font-family: 'Georgia', Times, Times New Roman, serif; */
-}
-
-a{
-    color: #2055AA;
-    font-family: 'Josefin Slab', serif;
-}
-
-a:hover{
-    color: #1AA9B7;
+.social-link:hover{
     text-decoration: none;
 }
 
-.header-main{
-    border-bottom: solid 1px #1B86C1;
-    margin-bottom: 20px;
-}
-
-
-
-
-
-/* Bio */
-#bio{
-    margin-top: 5px;
-}
-
-.big-name{
-    font-size: 3em;
-    border-bottom: solid 1px #1B86C1;
-    margin-bottom: 20px;
-}
-
-#profile-pic{
-    max-width: 300px;
-    width: 100%;
-    margin-bottom: 10px;
-    border-radius: 2px;
-}
-
-
-/* Featured Projects */
-.nav-target{
-    margin-top: 80px;
-}
-
-#portfolio{
-    max-width: 700px;
-}
-
-.proj-box{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    /* max-width: 250px; */
-}
-
-.titles{
-    color: #2055AA;
-    font-family: 'Josefin Slab', serif;
-    font-size: 1.15em;
-}
-
-.carousel-pic-box{
+.carousel-feature{
     height: 300px;
-    object-fit: cover;
+    background: black;
+}
+
+#feature-proj-1{
+    background: url('../images/dres.JPG') no-repeat center;
+    background-size: 100%;
+}
+
+#feature-proj-2{
+    background: url('../images/trivia.JPG') no-repeat center;
+    background-size: 100%;
+}
+
+#feature-proj-3{
+    background: url('../images/hero.JPG') no-repeat center;
+    background-size: 100%;
 }
 
 .carousel-caption{
-    color: black;
-    border: solid 1px #2055AA;
-    font-family: 'Josefin Slab', serif;
-    font-weight: bold;
-    background-color: rgba(192, 192, 192, 0.90);
-    border-radius: 15px;
-}
-
-.proj-pic-main{
-    min-height: 300px;
-    object-fit: cover;
-    /* min-height: 150px;
-    max-height: 400px; */
-}
-
-/* Other projects */
-#other-project-box{
-    height: 350px;
-    width: 500px;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    background-color: #e9e9e9;
-}
-
-#flex-projects{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.proj-box-other{
-    background-color: #e9e9e9;
-    margin: 5px 10px;
-    /* height: 275px; */
-    /* float: left; */
-    font-size: 0.85em;
-    /* display: inline; */
-}
-
-.proj-card-top{
-    height: 150px;
-}
-
-.proj-card-body{
-    height: 125px;
-}
-
-
-/* .proj-pic{
-    max-width: 200px;
-} */
-
-.proj-pic.card-img-top{
-    height: 150px;
-    object-fit: cover;
-}
-
-.card-body{
-    background-color: rgb(224, 224, 224);
-    border: solid 1px silver;
-}
-
-.proj-box .card-body{
-    height: 140px;
-}
-
-.proj-link{
-    width: 100%;
-    max-width: 200px;
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    border: solid 0.75px rgb(128, 128, 128);
+    border-radius: 10px;
+    background-color: rgba(111, 111, 202, 0.8);
     color: white;
-    background-color: #4aaaab;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-decoration: none;
 }
 
-/* .proj-box{
-    border: solid 1px #1B86C1;
-} */
-
-
-/* Contact */
-#contact{
-    /* max-width: 500px; */
+.caption-link{
+    color: rgb(192, 192, 192);
 }
 
-#contact-links{
-    margin-bottom: 50px;
-}
-
-a.contact-link{
-    width: 100%;
-}
-
-.btn{
-    background: #1B86C1;
-    border: 0 none;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #ffffff;
-}
-
-footer {
-    text-align: center;
-    font-size: 0.75em;
-    padding-top: 10px;
-    padding-bottom: 15px;
-    background-color: #2b2727;
-    color: #858383;
-    border-top: solid 2px #1B86C1;
-    /* position: fixed;
-    bottom: 0; */
-    width: 100%;
-}
-
-
-@media screen and (max-width: 980px){
-    .header-main{
-        border-bottom: solid 1px #1B86C1;
-        margin-bottom: 35px;
-    }
-    
-    #profile-pic{
-        max-width: 200px;
-        margin: auto;
-        margin-bottom: 15px;
-        display: block;
-    }
-
-    .proj-box{
-        max-width: 350px;
-        margin: auto;
-        margin-bottom: 15px;
-        display: block;
-    }
+.caption-link:hover{
+    color: white;
 }
